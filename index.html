@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Mecânica Custom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1><span style="color: #e5ff00;">Summer Custom</span></h1>
+
+    <div class="categories-container">
+
+        <!-- Coluna 1 -->
+        <div class="category-column">
+            
+            <div class="category">
+                <h2><span style="color: #e5ff00;">Conserto</span></h2>
+                <div class  ="items">
+                    <!-- Itens da categoria Rodas e Pneu -->
+                    <div class="item">
+                        <input type="checkbox" id="wheel" data-price="400">
+                        <input type="number" id="qty-wheel" class="quantity" min="1" value="1" disabled>
+                        <label for="wheel">Reparo - R$ 400,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="respray-wheel" data-price="300">
+                        <input type="number" id="qty-respray-wheel" class="quantity" min="1" value="1" disabled>
+                        <label for="respray-wheel">Pneus - R$ 300,00</label>
+                    </div>
+                </div>
+            </div>   
+
+            <!-- Categoria: Estética -->
+            <div class="category">
+                <h2><span style="color: #e5ff00;">Estética</span></h2>
+                <div class="items">
+                    <!-- Itens da categoria Estética -->
+                    <div class="item">
+                        <input type="checkbox" id="spoiler" data-price="4000">
+                        <input type="number" id="qty-spoiler" class="quantity" min="1" value="1" disabled>
+                        <label for="spoiler">Aerofólio - R$ 4.000,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="front-bumper" data-price="3500">
+                        <input type="number" id="qty-front-bumper" class="quantity" min="1" value="1" disabled>
+                        <label for="front-bumper">Para-choque Dianteiro - R$ 3.500,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="rear-bumper" data-price="3500">
+                        <input type="number" id="qty-rear-bumper" class="quantity" min="1" value="1" disabled>
+                        <label for="rear-bumper">Para-choque Traseiro - R$ 3.500,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="side-skirt" data-price="3200">
+                        <input type="number" id="qty-side-skirt" class="quantity" min="1" value="1" disabled>
+                        <label for="side-skirt">Saia Lateral - R$ 3.200,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="exhaust" data-price="3200">
+                        <input type="number" id="qty-exhaust" class="quantity" min="1" value="1" disabled>
+                        <label for="exhaust">Escapamento - R$ 3.200,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="roll-cage" data-price="3500">
+                        <input type="number" id="qty-roll-cage" class="quantity" min="1" value="1" disabled>
+                        <label for="roll-cage">Chassis - R$ 3.500,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="grille" data-price="1500">
+                        <input type="number" id="qty-grille" class="quantity" min="1" value="1" disabled>
+                        <label for="grille">Grelha - R$ 1.500,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="hood" data-price="3000">
+                        <input type="number" id="qty-hood" class="quantity" min="1" value="1" disabled>
+                        <label for="hood">Capô - R$ 3.000,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="left-fender" data-price="2500">
+                        <input type="number" id="qty-left-fender" class="quantity" min="1" value="1" disabled>
+                        <label for="left-fender">Paralamas - R$ 2.500,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="roof" data-price="2500">
+                        <input type="number" id="qty-roof" class="quantity" min="1" value="1" disabled>
+                        <label for="roof">Teto - R$ 2.500,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="horns" data-price="800">
+                        <input type="number" id="qty-horns" class="quantity" min="1" value="1" disabled>
+                        <label for="horns">Buzina - R$ 800,00</label>
+                    </div>
+                </div>
+            </div>
+
+                       <!-- Categoria: Estética -->
+            <div class="category">
+                <h2><span style="color: #e5ff00;">Insulfilm</span></h2>
+                <div class="items">
+                    <!-- Itens da categoria Estética -->
+                    <div class="item">
+                        <input type="checkbox" id="spoiler" data-price="8000">
+                        <input type="number" id="qty-spoiler" class="quantity" min="1" value="1" disabled>
+                        <label for="spoiler">Insulfilm Escuro - R$ 8.000,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="front-bumper" data-price="2000">
+                        <input type="number" id="qty-front-bumper" class="quantity" min="1" value="1" disabled>
+                        <label for="front-bumper">Insulfilm Escuro Medio - R$ 2.000,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="rear-bumper" data-price="1000">
+                        <input type="number" id="qty-rear-bumper" class="quantity" min="1" value="1" disabled>
+                        <label for="rear-bumper">Insulfilm Claro - R$ 1.000,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="side-skirt" data-price="500">
+                        <input type="number" id="qty-side-skirt" class="quantity" min="1" value="1" disabled>
+                        <label for="side-skirt">Insulfilm Muito Claro - R$ 500,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="exhaust" data-price="7500">
+                        <input type="number" id="qty-exhaust" class="quantity" min="1" value="1" disabled>
+                        <label for="exhaust">Insulfilm Verde Limão ou Escuro - R$ 7.500,00</label>
+                    </div>
+                </div>
+            </div>
+
+                                   <!-- Categoria: Estética -->
+            <div class="category">
+                <h2><span style="color: #e5ff00;">Placa</span></h2>
+                <div class="items">
+                    <!-- Itens da categoria Estética -->
+                    <div class="item">
+                        <input type="checkbox" id="spoiler" data-price="2500">
+                        <input type="number" id="qty-spoiler" class="quantity" min="1" value="1" disabled>
+                        <label for="spoiler">Azul e Branco - R$ 2.500,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="front-bumper" data-price="5000">
+                        <input type="number" id="qty-front-bumper" class="quantity" min="1" value="1" disabled>
+                        <label for="front-bumper">Amarelo e Preto - R$ 5.000,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="rear-bumper" data-price="2000">
+                        <input type="number" id="qty-rear-bumper" class="quantity" min="1" value="1" disabled>
+                        <label for="rear-bumper">Amarelo e Azul - R$ 2.500,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="side-skirt" data-price="5000">
+                        <input type="number" id="qty-side-skirt" class="quantity" min="1" value="1" disabled>
+                        <label for="side-skirt">Azul e Branca diferentes - R$ 5000,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="exhaust" data-price="5000">
+                        <input type="number" id="qty-exhaust" class="quantity" min="1" value="1" disabled>
+                        <label for="exhaust">Yankton - R$ 5.000,00</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoria: Rodas e Pneu -->
+            <div class="category">
+                <h2><span style="color: #e5ff00;">Rodas e Pneus</span></h2>
+                <div class="items">
+                    <!-- Itens da categoria Rodas e Pneu -->
+                    <div class="item">
+                        <input type="checkbox" id="wheel" data-price="2000">
+                        <input type="number" id="qty-wheel" class="quantity" min="1" value="1" disabled>
+                        <label for="wheel">Roda Padrão - R$ 2.000,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="respray-wheel" data-price="3000">
+                        <input type="number" id="qty-respray-wheel" class="quantity" min="1" value="1" disabled>
+                        <label for="respray-wheel">Roda Sport / Highend - R$ 3.000,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="custom-tyres" data-price="1500">
+                        <input type="number" id="qty-custom-tyres" class="quantity" min="1" value="1" disabled>
+                        <label for="custom-tyres">Roda Muscle / SUV / Offroad - R$ 1.500,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="tyre-smoke" data-price="2000">
+                        <input type="number" id="qty-tyre-smoke" class="quantity" min="1" value="1" disabled>
+                        <label for="tyre-smoke">Roda Lowrider / Tuner - R$ 2.000,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="tyre-smoke" data-price="500">
+                        <input type="number" id="qty-tyre-smoke" class="quantity" min="1" value="1" disabled>
+                        <label for="tyre-smoke">Roda Bike - R$ 500,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="tyre-smoke" data-price="5000">
+                        <input type="number" id="qty-tyre-smoke" class="quantity" min="1" value="1" disabled>
+                        <label for="tyre-smoke">Roda Super Mod 1 a 5 - R$ 5.000,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="tyre-smoke" data-price="5000">
+                        <input type="number" id="qty-tyre-smoke" class="quantity" min="1" value="1" disabled>
+                        <label for="tyre-smoke">Atomic Custom - R$ 5.000,00</label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Coluna 2 -->
+        <div class="category-column">
+
+            <!-- Categoria: Luzes -->
+            <div class="category">
+                <h2><span style="color: #e5ff00;">Luzes</span></h2>
+                <div class="items">
+                    <!-- Itens da categoria Luzes -->
+                    <div class="item">
+                        <input type="checkbox" id="xenon" data-price="12500">
+                        <input type="number" id="qty-xenon" class="quantity" min="1" value="1" disabled>
+                        <label for="xenon">Xenon - R$ 12.500,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="neon" data-price="15000">
+                        <input type="number" id="qty-neon" class="quantity" min="1" value="1" disabled>
+                        <label for="neon">Neon - R$ 15.000,00</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoria: Pintura e Adesivo -->
+            <div class="category">
+                <h2><span style="color: #e5ff00;">Pintura Primaria</span></h2>
+                <div class="items">
+                    <!-- Itens da categoria Pintura e Adesivo -->
+                    <div class="item">
+                        <input type="checkbox" id="respray-primary" data-price="1500">
+                        <input type="number" id="qty-respray-primary" class="quantity" min="1" value="1" disabled>
+                        <label for="respray-primary">Básica - R$ 1.500,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="respray-secondary" data-price="4000">
+                        <input type="number" id="qty-respray-secondary" class="quantity" min="1" value="1" disabled>
+                        <label for="respray-secondary">Fosca - R$ 4.000,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="respray-pearlescent" data-price="4800">
+                        <input type="number" id="qty-respray-pearlescent" class="quantity" min="1" value="1" disabled>
+                        <label for="respray-pearlescent">Metal - R$ 4.800,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="livery" data-price="8200">
+                        <input type="number" id="qty-livery" class="quantity" min="1" value="1" disabled>
+                        <label for="livery">Croma - R$ 8.200,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="livery" data-price="7200">
+                        <input type="number" id="qty-livery" class="quantity" min="1" value="1" disabled>
+                        <label for="livery">Camaleão - R$ 7.200,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="livery" data-price="750">
+                        <input type="number" id="qty-livery" class="quantity" min="1" value="1" disabled>
+                        <label for="livery">Perolado - R$ 750,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="livery" data-price="3500">
+                        <input type="number" id="qty-livery" class="quantity" min="1" value="1" disabled>
+                        <label for="livery">Cor das Rodas - R$ 3.500,00</label>
+                    </div>
+                     <div class="item">
+                        <input type="checkbox" id="livery" data-price="5800">
+                        <input type="number" id="qty-livery" class="quantity" min="1" value="1" disabled>
+                        <label for="livery">Fumaça dos Pneus - R$ 5.800,00</label>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Categoria: Pintura e Adesivo -->
+            <div class="category">
+                <h2><span style="color: #e5ff00;">Pintura Secundaria</span></h2>
+                <div class="items">
+                    <!-- Itens da categoria Pintura e Adesivo -->
+                    <div class="item">
+                        <input type="checkbox" id="respray-primary" data-price="1500">
+                        <input type="number" id="qty-respray-primary" class="quantity" min="1" value="1" disabled>
+                        <label for="respray-primary">Básica - R$ 1.500,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="respray-secondary" data-price="4000">
+                        <input type="number" id="qty-respray-secondary" class="quantity" min="1" value="1" disabled>
+                        <label for="respray-secondary">Fosca - R$ 4.000,00</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="respray-pearlescent" data-price="4800">
+                        <input type="number" id="qty-respray-pearlescent" class="quantity" min="1" value="1" disabled>
+                        <label for="respray-pearlescent">Metal - R$ 4.800,00</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoria: Tuning -->
+            <div class="category">
+                <h2><span style="color: #FF2800;">Vendas</span></h2>
+                <div class="items">
+                    <!-- Engine -->
+                    <div class="item">
+                        <input type="checkbox" id="livery" data-price="300">
+                        <input type="number" id="qty-livery" class="quantity" min="1" value="1">
+                        <label for="livery">Kit Comum - R$ 300,00</label>                           
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="livery" data-price="750">
+                        <input type="number" id="qty-livery" class="quantity" min="1" value="1">
+                        <label for="livery">Kit Avançado - R$ 750,00</label>                           
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="livery" data-price="300">
+                        <input type="number" id="qty-livery" class="quantity" min="1" value="1">
+                        <label for="livery">Pneus - R$ 300,00</label>                           
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="livery" data-price="1200">
+                        <input type="number" id="qty-livery" class="quantity" min="1" value="1" disabled>
+                        <label for="livery">Chave Inglesa - R$ 1.200,00</label>                           
+                    </div>
+                     <div class="item">
+                        <input type="checkbox" id="livery" data-price="3000">
+                        <input type="number" id="qty-livery" class="quantity" min="1" value="1" disabled>
+                        <label for="livery">Elevador Hidráulico - R$ 3.000,00</label>                           
+                    </div>
+                     <div class="item">
+                        <input type="checkbox" id="livery" data-price="20000">
+                        <input type="number" id="qty-livery" class="quantity" min="1" value="1" disabled>
+                        <label for="livery">Rastreador - R$ 20.000,00</label>                           
+                    </div>
+                     <div class="item">
+                        <input type="checkbox" id="livery" data-price="6000">
+                        <input type="number" id="qty-livery" class="quantity" min="1" value="1" disabled>
+                        <label for="livery">Exaustor - R$ 6.000,00</label>                           
+                    </div>
+
+
+    </div>
+
+    <div id="total-container">
+        <div class="total-container-tex">
+            <p id="total"></p>
+        </div>
+        <button id="generate-list-btn" style="opacity: 0">.</button>
+        <button onclick="document.querySelectorAll('input[type=checkbox]').forEach(cb => cb.checked = false)">Limpar</button>   
+    
+    </div>
+<!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+         <span id="close-modal" class="close">&times;</span>
+        <h2>Confirmação</h2>
+        <div>
+            <label for="user-code">Código do Mecânico:</label>
+            <input type="text" id="user-code" class="mechanic-number">
+        </div>
+        <div>
+            <label>Imagem do Veículo:</label>
+         <div id="paste-area" class="paste-area">
+            <p>Clique aqui e pressione Ctrl+V para colar a imagem do veículo.</p>
+            </div>
+        </div>
+        <button id="confirm-btn">Confirmar e Enviar</button>
+        </div>
+        </div>
+
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
